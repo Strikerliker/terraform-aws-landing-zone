@@ -4,6 +4,18 @@ A portfolio-grade AWS landing-zone reference implementation built with Terraform
 
 > This is a safe reference implementation. AWS Organizations resources are disabled by default so the project can be validated without changing an existing organization. Enable organization governance only from the AWS Organizations management account after reviewing the SCPs and variables.
 
+## Visual architecture
+
+### Data flow
+
+![Terraform AWS Landing Zone data flow](docs/terraform-aws-landing-zone-data-flow.svg)
+
+### AWS architecture
+
+![Terraform AWS Landing Zone AWS architecture](docs/terraform-aws-landing-zone-architecture.svg)
+
+The diagrams reflect the current reference implementation: reusable Terraform, CI validation, multi-AZ networking, encrypted audit logging, GuardDuty, Security Hub, EBS encryption, IAM controls, and optional AWS Organizations guardrails.
+
 ## What this project demonstrates
 
 - Infrastructure as Code using reusable Terraform configuration
